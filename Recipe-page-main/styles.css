@@ -1,0 +1,174 @@
+@font-face{
+    font-family: outfit;
+    src:url(/assets/fonts/outfit/static/Outfit-Regular.ttf) format("ttf");
+
+}
+@font-face{
+    font-family: young-serif;
+    src:url(/assets/fonts/young-serif/YoungSerif-Regular.ttf) format("ttf");
+
+}
+:root{
+    --nutmeg:hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --rose-white:hsl(330, 100%, 98%);
+    --eggshell:hsl(30, 18%, 90%);
+    --light-grey:hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal:hsl(24, 5%, 18%);
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    
+    
+
+}
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: young-serif;
+    font: 400 93.5%/176% "Outfit", sans-serif;
+    background: var(--eggshell);
+    color: var(--wenge-brown);
+}
+.width-Wrapper{
+    max-width: 60rem;
+    margin-inline: auto;
+    padding: 0 2rem;
+
+}
+
+
+.prepTime .properList, .g-prepTime .g-properList li{
+    padding: 1.5rem;
+
+}
+
+h1,h2{
+    font-family: "Young Serif", serif;
+    color: var(--nutmeg);
+}
+.content{
+    background: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 2rem;
+}
+.contentInner{
+    padding: 0 2rem;
+    display: grid;
+    gap: 2rem;
+    
+}
+.contentInner >*{
+    display: grid;
+    gap:1rem;
+}
+.featuresImage{
+    padding: 2rem;
+}
+.featuresImage img{
+    border-radius: 1rem;
+}
+
+.prepTime{
+    background: var(--rose-white);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.prepTime h2{
+    font-family: "Outfit", sans-serif;
+}
+
+.prepTime h2,.prepTime li::marker{
+    color:var(--dark-raspberry);
+}
+.instructions,.nutritionInfo{
+    border-top: 1px solid var(--light-grey);
+    padding-top: 2rem;
+}
+
+.prepTime strong{
+    font-weight: 700;
+}
+
+.ingredients li::marker, .instructions li::marker{
+    color: var(--nutmeg);
+}
+
+.instructions strong{
+    font-weight: 700;
+}
+
+.nutritionInfo table{
+    /*border: 1px solid red;*/
+    border-collapse: collapse;
+}
+.nutritionInfo tr > *{
+    /*border: 1px solid green;*/
+
+}
+.nutritionInfo tr > *{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+.nutritionInfo tr:not(:last-child) > *{
+    border-bottom: 1px solid var(--light-grey);
+
+}
+.nutritionInfo th{
+    text-align:left ;
+    font-weight: 400;
+}
+.nutritionInfo td{
+    font-weight: 700;
+    color: var(--nutmeg);
+}
+
+
+.attribution{
+    text-align: center;
+    padding: 2rem;
+}
+.attribution a{
+    color: blue;
+}
+.attribution a:hover,
+.attribution a:focus {
+    color: red;
+    text-decoration: none;
+}
+
+@media (max-width: 35rem) {
+    .width-Wrapper{
+        
+        padding: 0;
+    
+    }
+    .content{
+        margin:0;
+        border-radius: 0;
+    }
+    .featuresImage{
+        padding: 0;
+        padding-bottom: 2rem;
+
+    }
+    .featuresImage img{
+        border-radius: 0;
+
+    }
+    .attribution{
+        padding-top: 2rem;
+    }
+
+}
